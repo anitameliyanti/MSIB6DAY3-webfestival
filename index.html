@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Festival</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .success-message {
+            display: none;
+            color: green;
+        }
+        .form-control:valid + .success-message {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Art Festival</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#events">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <h1>Welcome to Art Festival</h1>
+                    <p>Join us for a celebration of creativity!</p>
+                    <a href="#events" class="btn btn-primary">Explore Events</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/artfestival.png" alt="Art Festival" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <img src="images/about.png" alt="About Image" class="img-fluid">
+            <p>The Art Festival is an annual event that celebrates the beauty and diversity of artistic expression. From painting and sculpture to music and dance, our festival showcases the talents of artists from around the world.</p>
+            <p>Our mission is to promote the arts and inspire creativity in people of all ages. Through exhibitions, performances, workshops, and more, we strive to create a vibrant and inclusive community where everyone can explore their artistic passions.</p>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <div class="container">
+            <h2>Events</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/event1.png" class="card-img-top" alt="Event 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Breathe: A Mindfulness Workshop</h5>
+                            <p class="card-text">Join us for a calming and rejuvenating experience as we explore the practice of mindfulness through guided meditation, and deep breathing exercises. This workshop offers a space to relax, recharge, and reconnect with yourself.</p>
+                            <a href="#contact" class="btn btn-primary">reservations</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/event2.png" class="card-img-top" alt="Event 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Spring Market Extravaganza</h5>
+                            <p class="card-text">Join us for a delightful day of shopping, food, and entertainment at our Spring Market Extravaganza! Browse through a wide variety of artisanal crafts, local products, and fresh produce while enjoying live music, delicious treats, and family-friendly activities.</p>
+                            <a href="#contact" class="btn btn-primary">reservations</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/event3.png" class="card-img-top" alt="Event 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Drink Talks: Exploring Mixology</h5>
+                            <p class="card-text">Join us for an immersive journey into the art of mixology and cocktail culture at our Drink Talks event. Delve into the rich history and craftsmanship behind your favorite libations as industry experts share their insights.</p>
+                            <a href="#contact" class="btn btn-primary">reservations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>For further inquiries, you can contact our event coordinators:</p>
+            <ul>
+                <li>Name: Anita Meliyanti</li>
+                <li>Email: anitamlynt23@gmail.com</li>
+                <li>Phone: +62 896 2962 7713</li>
+            </ul>
+        </div>
+        <h3>For inquiries and reservations, please fill out the form below:</h3>
+        
+        <form id="contactForm" action="#" method="post">
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                <div class="success-message">Valid</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                <div class="success-message">Valid</div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                <div class="success-message">Valid</div>
+            </div>
+            <div class="mb-3">
+                <label for="events" class="form-label">Select Events</label>
+                <select multiple class="form-control" id="events" name="events[]" required>
+                    <option value="" disabled selected>Choose...</option>
+                    <option value="event1">Event 1</option>
+                    <option value="event2">Event 2</option>
+                    <option value="event3">Event 3</option>
+                </select>
+                <div class="success-message">Valid</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+
+    
+    <footer class="bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Art Festival</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
